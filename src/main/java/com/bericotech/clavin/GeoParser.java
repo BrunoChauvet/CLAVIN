@@ -98,7 +98,6 @@ public class GeoParser {
 
         // first, extract location names from the text
         List<LocationOccurrence> locationNames = extractor.extractLocationNames(inputText);
-
         logger.trace("extracted: {}", locationNames);
 
         // then, resolve the extracted location names against a

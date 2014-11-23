@@ -50,10 +50,10 @@ public class WorkflowDemo {
     public static void main(String[] args) throws Exception {
         
         // Instantiate the CLAVIN GeoParser
-        GeoParser parser = GeoParserFactory.getDefault("./IndexDirectory");
+        GeoParser parser = GeoParserFactory.getDefault("/home/bruno/Workspace/CLAVIN/IndexDirectory", true);
         
         // Unstructured text file about Somalia to be geoparsed
-        File inputFile = new File("src/test/resources/sample-docs/Somalia-doc.txt");
+        File inputFile = new File("src/test/resources/sample-docs/AJ-001.txt");
         
         // Grab the contents of the text file as a String
         String inputString = TextUtils.fileToString(inputFile);

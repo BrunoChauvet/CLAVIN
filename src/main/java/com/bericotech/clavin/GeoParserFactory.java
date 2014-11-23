@@ -51,7 +51,7 @@ public class GeoParserFactory {
      * @throws ClavinException      If the index cannot be created.
      */
     public static GeoParser getDefault(String pathToLuceneIndex) throws ClavinException {
-        return getDefault(pathToLuceneIndex, 1, 1, false);
+        return getDefault(pathToLuceneIndex, 5, 5, false);
     }
 
     /**
@@ -63,7 +63,7 @@ public class GeoParserFactory {
      * @throws ClavinException      If the index cannot be created.
      */
     public static GeoParser getDefault(String pathToLuceneIndex, boolean fuzzy) throws ClavinException {
-        return getDefault(pathToLuceneIndex, 1, 1, fuzzy);
+        return getDefault(pathToLuceneIndex, 5, 5, fuzzy);
     }
 
     /**
